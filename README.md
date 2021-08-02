@@ -11,7 +11,7 @@ $ pkg install git
 
 $ git clone https://github.com/lordescreamo/antifakev4
 
-$ cd antifake4
+$ cd antifakev4
 
 $ bash install.sh
 
