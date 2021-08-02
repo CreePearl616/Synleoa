@@ -15,9 +15,9 @@ $ cd antifakev4
 
 $ bash install.sh
 
-$ npm i @adiwajshing/baileys
-
 $ npm start
+
+
 
 
 
