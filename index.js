@@ -336,9 +336,9 @@ Use o comando ${prefix}menu para listar meus comandos
             const arrayQND = ['Hoje', 'Amanhã', 'Nunca', 'dia', 'semana', 'mês', 'ano']
             const arrayQND2 = ['dias', 'semanas', 'meses', 'anos']
             const botNumber = tiringa.user.jid
-            const ownerNumber = [`6768634337@s.whatsapp.net`, `6768634337@s.whatsapp.net`]
+            const ownerNumber = [`5548988677777@s.whatsapp.net`, `5548988677777@s.whatsapp.net`]
             const liaN = [`5511962163969@s.whatsapp.net`]
-            const ownerNumberB = [`6768634337@s.whatsapp.net`]
+            const ownerNumberB = [`5548988677777@s.whatsapp.net`]
             const isGroup = mek.key.remoteJid.endsWith('@g.us') ? true : false
             sender = mek.key.fromMe ? tiringa.user.jid : mek.key.remoteJid.endsWith('@g.us') ? mek.participant : mek.key.remoteJid
             conts = mek.key.fromMe ? tiringa.user.jid : tiringa.contacts[sender] || {
