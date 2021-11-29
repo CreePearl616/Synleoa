@@ -136,11 +136,11 @@ clear
 figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
 
 echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Instalando módulos npm Solzinha."
+echo -e " ${PURPLE} Instalando módulos npm Sol ♥."
 echo -e " ${GREEN}"
 
 npm i node-tesseract-ocr --no-bin-links
-npm install -g npm@8.1.4
+npm install --legacy-peer-deps
 npm i --no-bin-links
 sleep 2
 clear
