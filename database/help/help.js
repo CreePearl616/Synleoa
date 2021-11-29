@@ -5,7 +5,7 @@ const help = (pushname, prefix, waa_version, batteryT, temporizador, uptime, hr,
 │🤖ɪɴғᴏʀᴍᴀᴄ̧ᴏ̃ᴇs ᴅᴏ ʙᴏᴛ:
 │        
 │⪧ ᴘʀᴇғɪx:「 ${prefix} 」
-│⪧ ɴᴏᴍᴇ: Screamo-BOT
+│⪧ ɴᴏᴍᴇ: Synleoa-BOT
 │⪧ ᴠᴇʀsᴀ̃ᴏ: 14.1
 │⪧ ᴠᴇʀsᴀ̃ᴏ ᴅᴏ ᴡʜᴀᴛsᴀᴘᴘ: ${waa_version}
 │⪧ ᴄᴀʀɢᴀ ᴅᴀ ʙᴀᴛᴇʀɪᴀ: ${batteryT}%
@@ -34,61 +34,6 @@ const help = (pushname, prefix, waa_version, batteryT, temporizador, uptime, hr,
 │
 │➲ Bot X9
 │➲ Novo sistema de leveis
-├─────────────┈ ⳹
-│✅ᴄᴏᴍᴀɴᴅᴏs ɴᴏᴠᴏs:
-│
-│➲ clearchat
-│➲ ytmp3
-│➲ ytmp4
-│➲ fetch
-│➲ bc
-│➲ shinobu
-│➲ more
-│➲ take
-│➲ fdeface
-│➲ baiano
-│➲ getbio
-│➲ bateria
-│➲ zombie
-│➲ trigger
-│➲ hartatahta
-│➲ antifake
-│➲ x9
-│➲ listban
-│➲ listprem
-├─────────────┈ ⳹
-│✔ ʀᴇᴍᴏᴠɪᴅᴏs:     
-│
-│➲ random
-│➲ 8bit
-│➲ gimage
-│➲ reversevid
-│➲ fastvid
-│➲ slowvid
-│➲ infogp
-│➲ drawing
-│➲ wanted
-│➲ lovepaper
-│➲ flowertext
-│➲ narutobanner
-│➲ romancetext
-│➲ shadowtext
-│➲ tiktokeffect
-│➲ neon
-│➲ hpotter
-│➲ ddd
-│➲ cartao
-│➲ bf4
-│➲ gtav
-│➲ facebookpage
-│➲ costumwp
-│➲ pantaimalam
-│➲ pencil
-├─────────────┈ ⳹
-│⚠️ᴀᴠɪsᴏ:
-│
-│➲ Última atualização...
-│
 ├─────────────┈ ⳹
 │════⇲ 😱 ɪɴғᴏʀᴍᴀᴄ̧ᴏ̃ᴇs 😋
 ╰┬────────────┈ ⳹
