@@ -136,7 +136,7 @@ clear
 figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
 
 echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Instalando módulos npm. Sol sua Linda"
+echo -e " ${PURPLE} Instalando módulos npm Sol sua Linda."
 echo -e " ${GREEN}"
 
 npm i node-tesseract-ocr --no-bin-links
@@ -190,4 +190,4 @@ echo ""
 
 echo -e " ${YELLOW} Todas as dependências foram instaladas."
 echo -e " ${YELLOW} Atualização: mudanças mínimas"
-echo -e " ${YELLOW} Use o comando: ${GREEN}npm start ${YELLOW}para iniciar o bot."
+echo -e " ${YELLOW} Use o comando: ${GREEN}npm start ${YELLOW}para iniciar o bot. Sol sua Linda."
