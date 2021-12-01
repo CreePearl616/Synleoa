@@ -20,109 +20,18 @@ WHITE='\033[1;37m'
 if [ "$inp" = "y" ]; then
 pkg update
 pkg upgrade
-fi
-clear
-
-if [ -e "$HOME/../usr/bin/ruby" ]; then
-	echo -e " ${GREEN}ruby detectado prosseguindo..."
-	sleep 1
-	if [ -e "/data/data/com.termux/files/usr/bin/lolcat" ]; then
-		echo -e " ${GREEN}lolcat detectado prosseguindo..."
-		sleep 1
-	else
-		echo -e " ${RED} lolcat não detectado, instalando..."
-		gem install lolcat
-	fi
-else
-	echo -e " ${RED}Você não instalou o ruby, instalando..."
-	sleep 1 
-	
-	apt install ruby -y
-	if [ -e "/data/data/com.termux/files/usr/bin/lolcat" ]; then
-		echo -e " ${GREEN}lolcat detectado prosseguindo..."
-		sleep 1
-	else
-		echo -e " ${RED}lolcat não detectado, instalando..."
-		gem install lolcat
-	fi
-fi 
-sleep 2
-clear
-
-apt-get install figlet -y
-clear
-
+apt install ruby -y
+gem install lolcat
+install figlet -y
 figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
-
-if [ -e "$HOME/../usr/bin/nodejs" ]; then
-	echo -e " ${GREEN}nodejs detectado prosseguindo..."
-	sleep 1
-	else
-		echo -e " ${RED} nodejs não detectado, instalando..."
-echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Usando o comando: pkg install nodejs"
-echo -e " ${GREEN}"
-sleep 3
 pkg install nodejs -y
-fi
-sleep 2
-clear
-figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
-
-if [ -e "$HOME/../usr/bin/libwebp" ]; then
-	echo -e " ${GREEN}libwebp detectado prosseguindo..."
-	sleep 1
-	else
-		echo -e " ${RED} libwebp não detectado, instalando..."
-echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Usando o comando: pkg install libwebp"
-echo -e " ${GREEN}"
-sleep 3
 pkg install libwebp -y
-fi
-sleep 2
-clear
-figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
-
-if [ -e "$HOME/../usr/bin/ffmpeg" ]; then
-	echo -e " ${GREEN}ffmpeg detectado prosseguindo..."
-	sleep 1
-	else
-		echo -e " ${RED} ffmpeg não detectado, instalando..."
-echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Usando o comando: pkg install ffmpeg"
-echo -e " ${GREEN}"
-sleep 5
 pkg install ffmpeg -y
-fi
-sleep 2
-clear
-figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
-
-if [ -e "$HOME/../usr/bin/wget" ]; then
-	echo -e " ${GREEN}wget detectado prosseguindo..."
-	sleep 1
-	else
-		echo -e " ${RED} wget não detectado, instalando..."
-echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Usando o comando: pkg install wget"
-echo -e " ${GREEN}"
-sleep 5
 pkg install wget -y
-fi
-sleep 2
-clear
-figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
-
-echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Usando o comando: pkg install tesseract"
-echo -e " ${GREEN}"
-sleep 5
 pkg install tesseract -y
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
 sleep 2
-figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
-echo ""
+fi
 echo ""
 
 echo -e " ${YELLOW} Todas que davam, foram instaladas."
@@ -130,4 +39,5 @@ echo -e " ${YELLOW} Atualização: mudanças mínimas"
 echo -e " ${YELLOW} Agora é contigo ${GREEN}a_Sol616 ${YELLOW}fazer o NPM no bruto."
 if [ "$inp" = "n" ]; then
     echo ${RED}"Okay. inté"
+fi
 sleep 2
