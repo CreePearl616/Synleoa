@@ -17,15 +17,12 @@ LIGHTCYAN='\033[1;36m'
 WHITE='\033[1;37m'
 
  echo -e " ${YELLOW}Iniciando..."
-sleep 3
-if [ "$inp" = "s" ]; then
-echo -e " ${PURPLE} Usando o comando: pkg update"
-echo -e " ${GREEN}"
+if [ "$inp" = "y" ]; then
 pkg update
-sleep 1
-echo -e " ${PURPLE} Usando o comando: pkg upgrade"
-echo -e " ${GREEN}"
 pkg upgrade
+if [ "$inp" = "n" ]; then
+    echo ${RED}"Okay. inté"
+fi
 sleep 2
 clear
 
@@ -98,7 +95,7 @@ if [ -e "$HOME/../usr/bin/ffmpeg" ]; then
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando o comando: pkg install ffmpeg"
 echo -e " ${GREEN}"
-sleep 3
+sleep 5
 pkg install ffmpeg -y
 fi
 sleep 2
@@ -113,7 +110,7 @@ if [ -e "$HOME/../usr/bin/wget" ]; then
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando o comando: pkg install wget"
 echo -e " ${GREEN}"
-sleep 3
+sleep 5
 pkg install wget -y
 fi
 sleep 2
@@ -123,7 +120,7 @@ figlet -c -f slant -t 'Tiringa-BOT' | lolcat
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando o comando: pkg install tesseract"
 echo -e " ${GREEN}"
-sleep 3
+sleep 5
 pkg install tesseract -y
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
 sleep 2
