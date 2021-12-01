@@ -123,53 +123,6 @@ sleep 5
 apt-get install tesseract -y
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
 sleep 2
-clear
-figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
-
-echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Limpando cache npm..."
-echo -e " ${GREEN}"
-sleep 5
-npm cache clean -f --no-bin-links
-sleep 2
-clear
-figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
-
-echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Instalando módulos npm Sol ♥."
-echo -e " ${GREEN}"
-
-npm i node-tesseract-ocr --no-bin-links
-npm install --legacy-peer-deps
-npm i --no-bin-links
-sleep 2
-clear
-figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
-
-echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Usando o comando: npm audit fix --force"
-echo -e " ${GREEN}"
-sleep 5
-npm audit fix --force
-sleep 2
-clear
-
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
 figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
 echo ""
 echo ""
@@ -188,6 +141,6 @@ echo ""
 echo ""
 echo ""
 
-echo -e " ${YELLOW} Todas as dependências foram instaladas."
+echo -e " ${YELLOW} Todas q dava, foram instaladas."
 echo -e " ${YELLOW} Atualização: mudanças mínimas"
-echo -e " ${YELLOW} Use o comando: ${GREEN}npm start ${YELLOW}para iniciar o bot. Solzinha."
+echo -e " ${YELLOW} Agora é contigo ${GREEN}a_Sol616 ${YELLOW}fazer o restante no bruto."
