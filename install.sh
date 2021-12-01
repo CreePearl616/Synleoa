@@ -98,7 +98,7 @@ if [ -e "$HOME/../usr/bin/ffmpeg" ]; then
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando o comando: pkg install ffmpeg"
 echo -e " ${GREEN}"
-sleep 5
+sleep 3
 pkg install ffmpeg -y
 fi
 sleep 2
@@ -113,7 +113,7 @@ if [ -e "$HOME/../usr/bin/wget" ]; then
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando o comando: pkg install wget"
 echo -e " ${GREEN}"
-sleep 5
+sleep 3
 pkg install wget -y
 fi
 sleep 2
@@ -123,7 +123,7 @@ figlet -c -f slant -t 'Tiringa-BOT' | lolcat
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando o comando: pkg install tesseract"
 echo -e " ${GREEN}"
-sleep 5
+sleep 3
 pkg install tesseract -y
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
 sleep 2
