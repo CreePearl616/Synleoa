@@ -17,26 +17,25 @@ LIGHTCYAN='\033[1;36m'
 WHITE='\033[1;37m'
 
  echo -e " ${YELLOW}Iniciando..."
+ read inp
 if [ "$inp" = "y" ]; then
-pkg update
-pkg upgrade
-apt install ruby -y
-gem install lolcat
-install figlet -y
-figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
-pkg install nodejs -y
-pkg install libwebp -y
-pkg install ffmpeg -y
-pkg install wget -y
-pkg install tesseract -y
+    pkg update
+    pkg upgrade
+    apt install ruby -y
+    gem install lolcat
+    install figlet -y
+    figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
+    pkg install nodejs -y
+    pkg install libwebp -y
+    pkg install ffmpeg -y
+    pkg install wget -y
+    pkg install tesseract -y
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
 sleep 2
-fi
-echo ""
-
 echo -e " ${YELLOW} Todas que davam, foram instaladas."
 echo -e " ${YELLOW} Atualização: mudanças mínimas"
 echo -e " ${YELLOW} Agora é contigo ${GREEN}a_Sol616 ${YELLOW}fazer o NPM no bruto."
+fi
 if [ "$inp" = "n" ]; then
     echo ${RED}"Okay. inté"
 fi
