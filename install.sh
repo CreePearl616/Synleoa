@@ -135,7 +135,8 @@ echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando o comando: pkg install tesseract "
 echo -e " ${GREEN}"
 sleep 1
-pkg install tesseract 
+pkg install tesseract
+wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
 sleep 3
 clear
 
