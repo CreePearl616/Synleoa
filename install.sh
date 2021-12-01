@@ -17,7 +17,16 @@ LIGHTCYAN='\033[1;36m'
 WHITE='\033[1;37m'
 
  echo -e " ${YELLOW}Iniciando..."
-sleep 4
+sleep 3
+if [ "$inp" = "s" ]; then
+echo -e " ${PURPLE} Usando o comando: pkg update"
+echo -e " ${GREEN}"
+pkg update
+sleep 1
+echo -e " ${PURPLE} Usando o comando: pkg upgrade"
+echo -e " ${GREEN}"
+pkg upgrade
+sleep 2
 clear
 
 if [ -e "$HOME/../usr/bin/ruby" ]; then
@@ -51,36 +60,31 @@ clear
 
 figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
 
-echo -e " ${CYAN}A instalar todas as dependências..." | lolcat -a -d 50 
-
-echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Usando o comando: apt-get update"
-echo -e " ${GREEN}"
-sleep 5
-apt-get update -y
-sleep 2
-clear
-figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
-
-echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Usando o comando: apt-get upgrade"
-echo -e " ${GREEN}"
-sleep 5
-apt-get upgrade -y
-sleep 2
-clear
-figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
-
 if [ -e "$HOME/../usr/bin/nodejs" ]; then
 	echo -e " ${GREEN}nodejs detectado prosseguindo..."
 	sleep 1
 	else
 		echo -e " ${RED} nodejs não detectado, instalando..."
 echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Usando o comando: apt-get install nodejs"
+echo -e " ${PURPLE} Usando o comando: pkg install nodejs"
 echo -e " ${GREEN}"
-sleep 5
-apt-get install nodejs -y
+sleep 3
+pkg install nodejs -y
+fi
+sleep 2
+clear
+figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
+
+if [ -e "$HOME/../usr/bin/libwebp" ]; then
+	echo -e " ${GREEN}libwebp detectado prosseguindo..."
+	sleep 1
+	else
+		echo -e " ${RED} libwebp não detectado, instalando..."
+echo -e " ${NOCOLOR}"
+echo -e " ${PURPLE} Usando o comando: pkg install libwebp"
+echo -e " ${GREEN}"
+sleep 3
+pkg install libwebp -y
 fi
 sleep 2
 clear
@@ -92,10 +96,10 @@ if [ -e "$HOME/../usr/bin/ffmpeg" ]; then
 	else
 		echo -e " ${RED} ffmpeg não detectado, instalando..."
 echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Usando o comando: apt-get install ffmpeg"
+echo -e " ${PURPLE} Usando o comando: pkg install ffmpeg"
 echo -e " ${GREEN}"
 sleep 5
-apt-get install ffmpeg -y
+pkg install ffmpeg -y
 fi
 sleep 2
 clear
@@ -107,40 +111,26 @@ if [ -e "$HOME/../usr/bin/wget" ]; then
 	else
 		echo -e " ${RED} wget não detectado, instalando..."
 echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Usando o comando: apt-get install wget"
+echo -e " ${PURPLE} Usando o comando: pkg install wget"
 echo -e " ${GREEN}"
 sleep 5
-apt-get install wget -y
+pkg install wget -y
 fi
 sleep 2
 clear
 figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
 
 echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Usando o comando: apt-get install tesseract"
+echo -e " ${PURPLE} Usando o comando: pkg install tesseract"
 echo -e " ${GREEN}"
 sleep 5
-apt-get install tesseract -y
+pkg install tesseract -y
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
 sleep 2
 figlet -c -f slant -t 'Tiringa-BOT' | lolcat 
 echo ""
 echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
 
-echo -e " ${YELLOW} Todas q dava, foram instaladas."
+echo -e " ${YELLOW} Todas que davam, foram instaladas."
 echo -e " ${YELLOW} Atualização: mudanças mínimas"
-echo -e " ${YELLOW} Agora é contigo ${GREEN}a_Sol616 ${YELLOW}fazer o restante no bruto."
+echo -e " ${YELLOW} Agora é contigo ${GREEN}a_Sol616 ${YELLOW}fazer o NPM no bruto."
