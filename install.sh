@@ -20,10 +20,7 @@ WHITE='\033[1;37m'
 if [ "$inp" = "y" ]; then
 pkg update
 pkg upgrade
-if [ "$inp" = "n" ]; then
-    echo ${RED}"Okay. inté"
 fi
-sleep 2
 clear
 
 if [ -e "$HOME/../usr/bin/ruby" ]; then
@@ -131,3 +128,6 @@ echo ""
 echo -e " ${YELLOW} Todas que davam, foram instaladas."
 echo -e " ${YELLOW} Atualização: mudanças mínimas"
 echo -e " ${YELLOW} Agora é contigo ${GREEN}a_Sol616 ${YELLOW}fazer o NPM no bruto."
+if [ "$inp" = "n" ]; then
+    echo ${RED}"Okay. inté"
+sleep 2
